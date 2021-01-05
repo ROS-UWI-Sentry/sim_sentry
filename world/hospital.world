@@ -14,7 +14,7 @@
 
 		<!-- Spawn Robot -->
 		<include>
-			<uri>model://model/sentry_v1</uri>
+			<uri>/model/sentry_v1</uri>
 		</include>
 	</world>
 </sdf>
