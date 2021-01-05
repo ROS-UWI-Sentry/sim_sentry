@@ -12,9 +12,6 @@
 			<uri>model://ground_plane</uri>
 		</include>
 
-		<!-- Spawn Robot -->
-		<include>
-			<uri>model://sentry_v1</uri>
-		</include>
+		
 	</world>
 </sdf>
