@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+	<model name="sentry">
+		<link name="base_link">
+			<self_collide>false</self_collide>
+			<pose frame="">-1.0395409765644898e-114 3.0814879110195774e-35 0.06 1.0691058840368764e-50 -3.94430452610506e-31 -3.3735033418337674e-80</pose>
+			<inertial>
+				<pose frame="">0.0 0.0 0.0 0 0 0</pose>
+				<mass>3.298877191482208</mass>
+				<inertia>
+					<ixx>0.31028210466725387</ixx>
+					<ixy>7.019023753440702e-07</ixy>
+					<ixz>3.3712572048818504e-07</ixz>
+					<iyy>0.21203836944489496</iyy>
+					<iyz>2.033984601675489e-08</iyz>
+					<izz>0.2364415924030168</izz>
+				</inertia>
+			</inertial>
+			<collision name="base_link_collision">
+				<geometry>
+					<mesh>
+						<uri>model://model/sentry_v1/meshes/CAD/base_link.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</collision>
+			<visual name="base_link_visual">
+				<geometry>
+					<mesh>
+						<uri>model://model/sentry_v1/meshes/CAD/base_link.stl</uri>
+						<scale>0.001 0.001 0.001</scale>
+					</mesh>
+				</geometry>
+			</visual>
+		</link>
+		<plugin filename="libcardsflow_gazebo_plugin.so" name="cardsflow_gazebo_plugin"/>
+	</model>
+</sdf>
