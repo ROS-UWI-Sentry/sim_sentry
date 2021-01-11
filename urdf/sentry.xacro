@@ -2,9 +2,12 @@
 <robot name="sentry" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 <xacro:include filename="$(find sim_sentry)/urdf/materials.xacro" />
+<!-- Transmission, currently not used -->
 <!--<xacro:include filename="$(find sentry_description)/urdf/sentry.trans" />-->
 <xacro:include filename="$(find sim_sentry)/urdf/sentry.gazebo" />
 
+<!--  Base link -->
+<!-- Combine as much bodies as possible into the base_link, this will reduce the complexity of the design -->
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -26,6 +29,8 @@
   </collision>
 </link>
 
+<!-- Wheel Link -->
+<!-- Both wheels can be refferenced from the same STL -->
 <link name="left_wheel">
   <inertial>
     <!--<origin rpy="0 0 0" xyz="-0.16605823931256913 -0.20000099435655025 0.0635760224098007"/>-->
@@ -70,6 +75,8 @@
   </collision>
 </link>
 
+<!-- Joint between Left wheel and Base Link -->
+<!-- The origin of the joint is used as the origin of that component, when positioning above -->
 <joint name="left_wheel_joint" type="continuous">
   <origin rpy="0 0 0" xyz="-0.18650 0 0.07260"/>
   <parent link="base_link"/>
