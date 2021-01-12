@@ -18,7 +18,7 @@
         </include>
 
         <!-- include URDF model -->
-        <param name="robot_description" command="$(find xacro)/xacro '$(find sim_sentry)/urdf/sentry.xacro'" />
+        <param name="robot_description" command="$(find xacro)/xacro '$(find sentry_description)/urdf/sentry.xacro'" />
 
         <arg name="x" default="0"/>
         <arg name="y" default="1"/>
