@@ -1,5 +1,5 @@
 <launch>
-  <include file="$(find aws_robomaker_hospital_world)/launch/hospital.launch">
+  <include file="$(find sim_sentry)/launch/hospital.launch">
     <arg name="gui" default="true"/>
   </include>
 </launch>
