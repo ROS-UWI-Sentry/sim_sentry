@@ -32,5 +32,17 @@
 
         <node name="control_manager" pkg="controller_manager" type="spawner"
             respawn="false" output="screen" args="mobile_base_controller" />-->
+
+        <!-- Node for publishing the robot state -->
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
+
+        <!-- Launch Rviz -->
+        <node name="rviz" pkg="rviz" type="rviz"
+            args="-d $(find sim_sentry)/rviz/sentry.rviz"/>
+        
+        <!-- Manipulating joints -->
+        <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+            <param name="use_gui" value="True"/>
+        </node>
             
 </launch>
