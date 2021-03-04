@@ -1,4 +1,4 @@
-<sdf version='1.7'>
+<sdf version='1.6'>
   <world name='world'>
     <gravity>0 0 -9.8</gravity>
     <physics name='default_physics' default='0' type='ode'>
@@ -949,14 +949,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/TrolleyBedPatient/2/files/meshes/TrolleyBedPatient.obj</uri>
+              <uri>file://TrolleyBedPatient/meshes/TrolleyBedPatient.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/TrolleyBedPatient/2/files/meshes/TrolleyBedPatient.obj</uri>
+              <uri>file://TrolleyBedPatient/meshes/TrolleyBedPatient.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -986,14 +986,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/ScrubsTrolley/2/files/meshes/ScrubsTrolley.obj</uri>
+              <uri>file://ScrubsTrolley/meshes/ScrubsTrolley.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/ScrubsTrolley/2/files/meshes/ScrubsTrolley_Col.obj</uri>
+              <uri>file://ScrubsTrolley/meshes/ScrubsTrolley_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1023,14 +1023,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Scrubs/1/files/meshes/scrubs.obj</uri>
+              <uri>file://Scrubs/meshes/scrubs.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Scrubs/1/files/meshes/Scrubs_Col.obj</uri>
+              <uri>file://Scrubs/meshes/Scrubs_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1060,14 +1060,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/XRayMachine/1/files/meshes/XRayMachine.obj</uri>
+              <uri>file://XRayMachine/meshes/XRayMachine.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/XRayMachine/1/files/meshes/XRayMachine_Col.obj</uri>
+              <uri>file://XRayMachine/meshes/XRayMachine_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1097,14 +1097,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Nurse/1/files/meshes/Nurse.obj</uri>
+              <uri>file://Nurse/meshes/Nurse.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Nurse/1/files/meshes/Nurse_Col.obj</uri>
+              <uri>file://Nurse/meshes/Nurse_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1133,14 +1133,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/ElderLadyPatient/1/files/meshes/ElderFemale.obj</uri>
+              <uri>file://ElderLadyPatient/meshes/ElderFemale.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/ElderLadyPatient/1/files/meshes/ElderFemale.obj</uri>
+              <uri>file://ElderLadyPatient/meshes/ElderFemale.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1182,14 +1182,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/AnesthesiaMachine/1/files/meshes/AnesthesiaMachine.obj</uri>
+              <uri>file://AnesthesiaMachine/meshes/AnesthesiaMachine.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/AnesthesiaMachine/1/files/meshes/AnesthesiaMachine_Col.obj</uri>
+              <uri>file://AnesthesiaMachine/meshes/AnesthesiaMachine_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1255,14 +1255,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BloodPressureMonitor/1/files/meshes/BloodPressureMonitor.obj</uri>
+              <uri>file://BloodPressureMonitor/meshes/BloodPressureMonitor.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BloodPressureMonitor/1/files/meshes/BloodPressureMonitor_Col.obj</uri>
+              <uri>file://BloodPressureMonitor/meshes/BloodPressureMonitor_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1292,14 +1292,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BloodPressureMonitor/1/files/meshes/BloodPressureMonitor.obj</uri>
+              <uri>file://BloodPressureMonitor/meshes/BloodPressureMonitor.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BloodPressureMonitor/1/files/meshes/BloodPressureMonitor_Col.obj</uri>
+              <uri>file://BloodPressureMonitor/meshes/BloodPressureMonitor_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1328,14 +1328,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BedsideTable/1/files/meshes/BedsideTable.obj</uri>
+              <uri>file://BedsideTable/meshes/BedsideTable.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BedsideTable/1/files/meshes/BedsideTable_Col.obj</uri>
+              <uri>file://BedsideTable/meshes/BedsideTable_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1377,14 +1377,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/CArm/1/files/meshes/CArm.obj</uri>
+              <uri>file://CArm/meshes/CArm.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/CArm/1/files/meshes/CArm_Col.obj</uri>
+              <uri>file://CArm/meshes/CArm_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1414,14 +1414,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/InstrumentCart2/1/files/meshes/InstrumentCart2.obj</uri>
+              <uri>file://InstrumentCart2/meshes/InstrumentCart2.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/InstrumentCart2/1/files/meshes/InstrumentCart2.obj</uri>
+              <uri>file://InstrumentCart2/meshes/InstrumentCart2.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1451,14 +1451,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/OpScrubs/2/files/meshes/OpScrubs.obj</uri>
+              <uri>file://OpScrubs/meshes/OpScrubs.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/OpScrubs/2/files/meshes/OpScrubs_Col.obj</uri>
+              <uri>file://OpScrubs/meshes/OpScrubs_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1488,14 +1488,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Scrubs/1/files/meshes/scrubs.obj</uri>
+              <uri>file://Scrubs/meshes/scrubs.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/Scrubs/1/files/meshes/Scrubs_Col.obj</uri>
+              <uri>file://Scrubs/meshes/Scrubs_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1525,14 +1525,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/SurgicalTrolley/1/files/meshes/trolley.obj</uri>
+              <uri>file://SurgicalTrolley/meshes/trolley.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/SurgicalTrolley/1/files/meshes/trolley.obj</uri>
+              <uri>file://SurgicalTrolley/meshes/trolley.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -1561,14 +1561,14 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BedsideTable/1/files/meshes/BedsideTable.obj</uri>
+              <uri>file://BedsideTable/meshes/BedsideTable.obj</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/BedsideTable/1/files/meshes/BedsideTable_Col.obj</uri>
+              <uri>file://BedsideTable/meshes/BedsideTable_Col.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>

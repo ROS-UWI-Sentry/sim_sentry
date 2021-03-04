@@ -7,17 +7,18 @@
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/XRayMachine/1/files/meshes/XRayMachine.obj</uri>
+                        <uri>file://XRayMachine/meshes/XRayMachine.obj</uri>
                     </mesh>
                 </geometry>
             </visual>
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>https://fuel.ignitionrobotics.org/1.0/OpenRobotics/models/XRayMachine/1/files/meshes/XRayMachine_Col.obj</uri>
+                        <uri>file://XRayMachine/meshes/XRayMachine_Col.obj</uri>
                     </mesh>
                 </geometry>
             </collision>
         </link>
     </model>
 </sdf>
+
