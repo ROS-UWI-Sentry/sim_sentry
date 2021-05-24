@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<launch>
+    <include file="/home/krishan/catkin_ws/src/zed-ros-examples/examples/zed_rtabmap_example/launch/zed_rtabmap.launch"/>
+    
+    <arg name="camera_name"           default="zed" /> <!-- The name you want -->
+    <arg name="camera_model"          default="zed2" /> <!-- 'zed' or 'zedm' or 'zed2' -->
+    <arg name="zed_nodelet_name"         default="zed_nodelet" />
+
+    <!-- Load SVO file -->
+    <arg name="svo_file"              default="" /><!-- <arg name="svo_file" default="path/to/svo/file.svo"> -->
+    <!-- Remote stream -->
+    <arg name="stream"                default="" /> <!-- <arg name="stream" default="<ip_address>:<port>"> -->
+
+    <!-- Base frame -->
+    <arg name="base_frame"            default="base_link" />
+
+    <!-- Publish ZED urdf -->
+    <arg name="publish_urdf"          default="true" />
+
+    <arg name="camera_id"             default="0" />
+    <arg name="gpu_id"                default="-1" />
+
+    <!-- Position respect to base frame (i.e. "base_link) -->
+    <arg name="cam_pos_x"             default="0.0" />
+    <arg name="cam_pos_y"             default="0.0" />
+    <arg name="cam_pos_z"             default="0.0" />
+
+    <!-- Orientation respect to base frame (i.e. "base_link) -->
+    <arg name="cam_roll"              default="0.0" />
+    <arg name="cam_pitch"             default="0.0" />
+    <arg name="cam_yaw"               default="0.0" />
+    
+    
+    <!--<arg name="pi/2" value="1.5707963267948966" />
+    <arg name="optical_rotate" value="0 0 0 -$(arg pi/2) 0 -$(arg pi/2)" />
+    <node pkg="tf" type="static_transform_publisher" name="camera_base_link"
+        args="$(arg optical_rotate) base_link camera_link 100" /> -->
+
+    <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan" >
+        <param name="scan_height" value="10"/>
+        <param name="output_frame_id" value="$(arg camera_name)_left_camera_frame"/>
+        <param name="range_min" value="0.1"/>
+        <remap from="image" to="/zed/zed_node/depth/depth_registered"/>
+        <remap from="/zed/scan" to="/scan" />
+    </node>
+
+</launch>
