@@ -43,12 +43,22 @@
         <remap from="image" to="/zed/zed_node/depth/depth_registered"/>
         <remap from="/zed/scan" to="/scan" />
     </node>
-
-
-
-        
-    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
-        <param name="use_gui" value="false"/>
-    </node> 
+    
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" >
+        <remap from="/joint_states"  to="zed/joint_states" />
+        <param name="robot_description"
+        command="$(find xacro)/xacro '$(find sentry_description)/urdf/zed_descr.urdf.xacro'
+                camera_name:=$(arg camera_name)
+                camera_model:=$(arg camera_model)
+                base_frame:=$(arg base_frame)
+                cam_pos_x:=$(arg cam_pos_x)
+                cam_pos_y:=$(arg cam_pos_y)
+                cam_pos_z:=$(arg cam_pos_z)
+                cam_roll:=$(arg cam_roll)
+                cam_pitch:=$(arg cam_pitch)
+                cam_yaw:=$(arg cam_yaw)"
+/>
+    </node>     
+    
 
 </launch>
