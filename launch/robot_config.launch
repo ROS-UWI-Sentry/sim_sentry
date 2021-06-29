@@ -58,13 +58,14 @@
                 cam_pitch:=$(arg cam_pitch)
                 cam_yaw:=$(arg cam_yaw)"/>
     </node>     
+
     
-    <!--<node pkg="robot_localization" type="ekf_localization_node" name="ekf_node_name" clear_params="true">
-        <rosparam command="load" file="$(find robot_localization)/params/ekf_template.yaml" />
-
-        <remap from="odometry/filtered" to=""/>
-        <remap from="accel/filtered" to=""/>
-
-    </node>-->
-
+    <!-- include gazebo_ros launcher -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+            <arg name="world_name" value="$(arg world)" />
+            <arg name="debug" value="$(arg debug)" />
+            <arg name="gui" value="$(arg gui)" />
+            <arg name="paused" value="$(arg pause)" />
+            <arg name="use_sim_time" value="true" />
+    </include> 
 </launch>
